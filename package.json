@@ -1,0 +1,30 @@
+{
+  "name": "file-json-processor",
+  "version": "1.0.0",
+  "description": "A library to process files or JSON data with automate schema detection and database integration with datatypes.",
+  "main": "src/processData.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test/test.js",
+    "start": "node src/processData.js"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "mongodb": "^6.11.0",
+    "mysql2": "^3.11.5",
+    "path": "^0.12.7"
+  },
+  "keywords": [
+    "csv",
+    "json",
+    "processor",
+    "database",
+    "schema",
+    "automation",
+    "excel",
+    "txt",
+    "data"
+  ],
+  "author": "Jay Bhanushali",
+  "license": "MIT"
+}
