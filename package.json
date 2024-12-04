@@ -25,6 +25,10 @@
     "txt",
     "data"
   ],
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/Jaybhanu12/file-json-processor.git"
+  },
   "author": "Jay Bhanushali",
-  "license": "MIT"
+  "license": "ISC"
 }
