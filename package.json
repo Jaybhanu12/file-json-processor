@@ -1,6 +1,6 @@
 {
   "name": "@jaybhanushali01/file-json-processor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library to process files or JSON data with automate schema detection and database integration with datatypes.",
   "main": "src/processData.js",
   "type": "module",
