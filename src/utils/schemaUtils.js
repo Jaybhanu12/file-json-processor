@@ -21,14 +21,14 @@ export const detectDelimiterWithNLP = (headerLine) => {
   const uniqueDelimiters = [...new Set(delimiterPatterns)];
 
   if (uniqueDelimiters.length === 1) {
-    console.log("Single Delimiter Detected:", uniqueDelimiters[0]);
+    // console.log("Single Delimiter Detected:", uniqueDelimiters[0]);
     return { delimiter: uniqueDelimiters[0], isSingleDelimiter: true };
   }
 
   const uniqueSequence = uniqueDelimiters.map((delimiter) =>
     delimiter.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
   );
-  console.log("Detected Delimiters Sequence:", uniqueSequence);
+  // console.log("Detected Delimiters Sequence:", uniqueSequence);
   return { delimiter: uniqueSequence, isSingleDelimiter: false };
 };
 // splitrow using dynamic delimiter

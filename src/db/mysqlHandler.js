@@ -10,7 +10,7 @@ export const pushToMySQL = async (dbConfig, collectionName, data) => {
     // ensure database exists
     const createDBQuery = `CREATE DATABASE IF NOT EXISTS \`${database}\``;
     await connection.query(createDBQuery);
-    console.log(`Database '${database}' ensured.`);
+    // console.log(`Database '${database}' ensured.`);
 
     // Switch connection to the target database
     await connection.changeUser({ database });
@@ -23,7 +23,7 @@ export const pushToMySQL = async (dbConfig, collectionName, data) => {
     // Create table if it doesn't exist
     const createTableQuery = `CREATE TABLE IF NOT EXISTS \`${tableName}\` (${columns})`;
     await connection.query(createTableQuery);
-    console.log(`Table '${tableName}' ensured in MySQL.`);
+    // console.log(`Table '${tableName}' ensured in MySQL.`);
 
     // Dynamically truncate fields if data exceeds sql default max length...
     const maxLength = 255;

@@ -50,7 +50,7 @@ const processFileData = async (
   customHandler,
   outputFolder
 ) => {
-  console.log(`Processing CSV file: ${filePath}`);
+  // console.log(`Processing CSV file: ${filePath}`);
 
   const { schema, delimiterSequence, isSingleDelimiter } =
     await ReadFileHeader(filePath);
